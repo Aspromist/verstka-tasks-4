@@ -1,73 +1,85 @@
+body {
+    background-color: #DCDCDC;
+}
+
 .newspaper {
-	width: 1310px;
-	border: 1px solid black;
+    width: 1310px;
+    border: 1px solid black;
 }
 
 .mainHeader {
-	text-align: center;
-	font-size: 48px;
-	border: 1px solid black;
-	min-width: 1310px;
+    text-align: center;
+    font-size: 54px;
+    border-bottom: 1px solid black;
+    min-width: 1310px;
 }
 
 .title {
-	border: 1px solid black;
-	width: 500px;
-	margin: auto;
-	display: inline-block;
+    width: 500px;
+    margin: auto;
+    display: inline-block;
+    font-family: 'IM Fell DW Pica', serif;
 }
 
 .leftOfHeader, .rightOfHeader {
-	display: inline-block;
-	border: 2px solid black;
-	font-size: 20px;
-	margin-top: 1px;
-
-	width: 180px;
-	height: 44px;
+    display: inline-block;
+    border-top: 2px ridge black;
+    border-bottom: 2px ridge black;
+    font-size: 20px;
+    margin-top: 1px;
+    font: 20px 'Fredericka the Great', cursive;
+    width: 180px;
+    height: 48px;
 }
 
 .leftOfHeader {
     float: left;
-	margin-left: 40px;
-	left: 0;
+    margin-left: 40px;
+    left: 0;
 }
 
 .rightOfHeader {
-	margin-right: 40px;
-	float: right;
-	right: 0;
+    margin-right: 40px;
+    float: right;
+    right: 0;
 }
 
 .underHeader {
-	min-width: 1310px;
-	border-top: 1px double black;
-	border-bottom: 1px double black;
-	text-align: center;
+    min-width: 1310px;
+    border-top: 1px double black;
+    border-bottom: 1px double black;
+    text-align: center;
+    font: 16px 'Cinzel Decorative', cursive;
 }
 
 .price {
-	float: right;
+    float: right;
 }
 
 .article {
-min-width: 1310px;
+    min-width: 1320px;
+    text-align: justify;
 }
 
 .leftSide {
-	height: 858px;
-	width: 48%;
+    height: 1131px;
+    width: 649px;
     left: 0;
     position: absolute;
-    min-width: 600px;
+    min-width: 649px;
     margin-left: 20px;
     margin-right: 20px;
-    border: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .leftBottom {
-	position: absolute;
-	bottom: 0;
+    position: absolute;
+    bottom: 0;
+    border-top: 10px double black;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 629px;
 }
 
 .column {
@@ -89,54 +101,70 @@ min-width: 1310px;
     min-width: 600px;
     margin-left: 20px;
     margin-right: 20px;
-    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
    }
 
 .rightSide {
-	width: 48%;
-	right: 0;
-	margin-right: 20px;
-	float: right;
-	min-width: 630px;
-	border: 1px solid black;
-	min-height: 500px;
+    width: 48%;
+    right: 0;
+    margin-right: 20px;
+    float: right;
+    min-width: 630px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    min-height: 500px;
+}
+
+p, ul {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 p:first-letter {
-	font-size: 40px;
+    font-size: 40px;
 }
 
-.header1, .header2, .header3{
-	font-size: 38px;
-	text-align: center;
+.header1, .header2, .header3, .header4{
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+}
+
+.header4 {
+    height: 50px;
+}
+
+.header1 p, .header2 p, .header4 p {
+    font-family: 'Asap', sans-serif;
 }
 
 .picture {
-	min-width: 400px;
-	position: absolute;
-	margin: 2px;
+    min-width: 400px;
+    position: absolute;
+    margin: 0;
 }
 
 .textRightFromPicture {
-	word-break: break-all;
-	overflow: hidden;
-	float: right;
-	width: 210px;
-	min-width: 210px;
-	height: 278px;
-	border: 1px solid black;
-	margin-right: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
+    float: right;
+    width: 210px;
+    min-width: 210px;
+    height: 278px;
+    border-top: 1px dotted gray;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
 }
 
 .containerImgAndText {
-	min-width: 630px;
-	height: 278px;
+    min-width: 630px;
+    height: 278px;
 }
 
 .rightArticle {
-	-webkit-column-width: 100px;
+    -webkit-column-width: 100px;
     -moz-column-width: 100px;
     column-width: 100px;
     -webkit-column-count: 3;
@@ -148,8 +176,14 @@ p:first-letter {
     -webkit-column-rule: 1px solid #ccc;
     -moz-column-rule: 1px solid #ccc;
     column-rule: 1px solid #ccc;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .header3 {
-	text-align: center;
+    text-align: center;
+}
+
+article header:first-letter, article header p:first-letter {
+    font-size: 28px;
 }
